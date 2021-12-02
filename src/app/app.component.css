@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.bound{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 55%;
+    width: 100%;
+    background-color: black;
+    vertical-align: auto;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.box{
+    position: fixed;
+    top: 290px;
+    right: 120px;
+    left: 130px;
+    border-radius: 8px;
+    height: 330px;
+    background-color:white;
+    box-shadow: rgb(35 55 80 / 30%) 0px 6px 12px;
+}
+
+.item-form{
+    display: flex;
+    gap: 4px 16px;
+    grid-auto-flow: column;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) auto minmax(100px, 1fr);
+    grid-template-rows: auto [input-row-start] auto [input-row-end] auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: xx-large;
+    
+}
+input{
+    height:20px;
+    width: 180px;
+    font-size: x-large;
+}
+
+.btn{
+
+    height: 35px;
+    width: 100px;
+    margin-left: 1190px;
+    margin-top: 80px;
+}
+
+label,
+footer {
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 1,5rem;
+    padding-right: 10px;
+}
+
+input{
+    border:none;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 3%;
+}
+select{
+    border: solid 3px;
+    border-radius: 1vh;
+    box-sizing: border-box;
+    padding: 1%;
+}
+.result{
+    width: 90%;
+    box-sizing: border-box;
+    padding: 3%;
+    text-align: left;
+}
